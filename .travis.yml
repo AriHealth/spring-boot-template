@@ -1,0 +1,14 @@
+language: java
+
+sudo: false # faster builds
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - if [ "$TRAVIS_BRANCH" = "master" && "$TRAVIS_PULL_REQUEST" = true ]; then mvn clean test; mvn package -Dmaven.test.skip=true; mvn -s .travis/settings.xml sonar:sonar; fi
+  - if [ "$TRAVIS_BRANCH" = "release" ]; then chmod +x .travis/prepare.sh && .travis/prepare.sh; mvn -s .travis/settings.xml -B release:clean release:prepare; git push --tags; mvn -s .travis/settings.xml -B release:perform; chmod +x .travis/push.sh && .travis/push.sh; fi
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
