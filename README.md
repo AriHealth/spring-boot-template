@@ -1,8 +1,8 @@
 # Spring Boot template
 
-[![Build Status](https://travis-ci.org/AriHealth/spring-template.svg?branch=master)](https://travis-ci.org/AriHealth/spring-template) [![codecov.io](https://codecov.io/gh/AriHealth/spring-template/branch/master/graphs/badge.svg)](http://codecov.io/gh/AriHealth/spring-template)
-[![Docker Build](https://img.shields.io/docker/cloud/build/arihealth/calculator)](https://cloud.docker.com/u/arihealth/repository/docker/arihealth/calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/arihealth/calculator)](https://cloud.docker.com/u/arihealth/repository/docker/arihealth/calculator)
+[![Build Status](https://travis-ci.org/AriHealth/spring-boot-template.svg?branch=master)](https://travis-ci.org/AriHealth/spring-boot-template) [![codecov.io](https://codecov.io/gh/AriHealth/spring-boot-template/branch/master/graphs/badge.svg)](http://codecov.io/gh/AriHealth/spring-boot-template)
+[![Docker Build](https://img.shields.io/docker/cloud/build/ccavero/calculator)](https://cloud.docker.com/u/ccavero/repository/docker/ccavero/calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ccavero/calculator)](https://cloud.docker.com/u/ccavero/repository/docker/ccavero/calculator)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
