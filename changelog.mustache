@@ -1,0 +1,15 @@
+# Spring Boot Template
+
+Spring Boot template prepared for CI/CD in GitHub and Travis which adds two numbers without verification. 
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+  {{#hasIssue}}
+### {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} `{{.}}` {{/labels}} {{/hasLabels}}
+* Further information in the Pull Request [{{issue}}]({{link}})
+  {{/hasIssue}}
+  {{^hasIssue}}
+  {{/hasIssue}}
+ {{/issues}}
+{{/tags}}

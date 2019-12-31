@@ -1,0 +1,9 @@
+server:
+  port: 8082
+  
+spring:
+    profiles:
+      active: ${LOGGING_MODE:dev}
+    jackson:
+      serialization:
+        INDENT_OUTPUT: true

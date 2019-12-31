@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<configuration>
+	<property name="LOG_DIR" value="${LOGGING_FOLDER:-logs}" />
+	<property name="LOG_FILE" value="auth" />
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				%d{HH:mm:ss.SSS} %-5level [%thread] %C{0}.%M[%L] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="SAVE-TO-FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_DIR}/${LOG_FILE}.log</file>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%d{dd-MM-yyyy HH:mm:ss.SSS} %-5level [%thread] %logger{36}.%M - %msg%n
+			</Pattern>
+		</encoder>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<!-- rollover daily & on size -->
+			<maxFileSize>10MB</maxFileSize>
+			<fileNamePattern>
+				${LOG_DIR}/archived/${LOG_FILE}_%d{dd-MM-yyyy}_%i.log
+			</fileNamePattern>
+			<maxHistory>10</maxHistory>
+			<totalSizeCap>100MB</totalSizeCap>
+		</rollingPolicy>
+	</appender>
+
+	<springProfile name="dev">
+		<root level="debug">
+			<appender-ref ref="STDOUT" />
+			<appender-ref ref="SAVE-TO-FILE" />
+		</root>
+	</springProfile>
+
+	<springProfile name="prod">
+		<root level="info">
+			<appender-ref ref="SAVE-TO-FILE" />
+		</root>
+	</springProfile>
+
+</configuration>
