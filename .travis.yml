@@ -14,6 +14,7 @@ addons:
       
 script:
   - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then mvn clean test; mvn package -Dmaven.test.skip=true; mvn sonar:sonar -Dsonar.projectKey=arihealth_spring-boot-template; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then mvn mvn sonar:sonar -Dsonar.projectKey=arihealth_spring-boot-template; fi
   - if [ "$TRAVIS_BRANCH" = "release" ]; then chmod +x .travis/prepare.sh && .travis/prepare.sh; mvn -s .travis/settings.xml -B release:clean release:prepare; git push --tags; mvn -s .travis/settings.xml -B release:perform; chmod +x .travis/push.sh && .travis/push.sh; fi
 
 after_success:
