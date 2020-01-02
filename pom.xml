@@ -10,7 +10,7 @@
 
 	<groupId>net.atos.ari</groupId>
 	<artifactId>spring-boot-template</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
 	
 	<name>spring-boot-template</name>
@@ -35,7 +35,7 @@
 		<url>https://github.com/AriHealth/spring-boot-template.git</url>
 		<connection>scm:git:https://github.com/AriHealth/spring-boot-template.git</connection>
 		<developerConnection>scm:git:https://github.com/AriHealth/spring-boot-template.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>0.0.1</tag>
 	</scm>
 
 	<distributionManagement>
