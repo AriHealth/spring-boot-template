@@ -134,7 +134,7 @@
 				<executions>
 					<execution>
 						<id>generateChangelog</id>
-						<phase>deploy</phase>
+						<phase>generate-sources</phase>
 						<goals>
 							<goal>git-changelog</goal>
 						</goals>
