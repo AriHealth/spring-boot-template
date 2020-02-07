@@ -7,6 +7,14 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/ccavero/simple-calculator)](https://cloud.docker.com/u/ccavero/repository/docker/ccavero/simple-calculator)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## Before starting
+
+We are using this repository as an example of CI/CD. Please read carefully the following slide share presentations and how to:
+
+- [Git Flow + Pull Requests Fundamentals](https://es.slideshare.net/CarlosCaveroBarca/git-flow-pull-requests-fundamentals)
+- [CICD Workflow Fundamentals](https://es.slideshare.net/CarlosCaveroBarca/cicd-workflow-fundamentals)
+- [CICD With GitHub, Travis, SonarCloud and Docker Hub](https://es.slideshare.net/CarlosCaveroBarca/cicd-with-github-travis-sonarcloud-and-docker-hub)
+
 ## Description
 
 Spring Boot template for CI with GitHub, Travis CI, SonarCloud and Docker Hub. It exposes an API with this operation:
