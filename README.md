@@ -9,7 +9,7 @@
 
 ## Before starting
 
-We are using this repository as an example of CI/CD. Please read carefully the following slide share presentations and how to:
+We are using this repository as an example of CI/CD. Please read carefully the following slide share presentations:
 
 - [Git Flow + Pull Requests Fundamentals](https://es.slideshare.net/CarlosCaveroBarca/git-flow-pull-requests-fundamentals)
 - [CICD Workflow Fundamentals](https://es.slideshare.net/CarlosCaveroBarca/cicd-workflow-fundamentals)
