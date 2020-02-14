@@ -3,6 +3,9 @@
 Spring Boot template prepared for CI/CD in GitHub and Travis which adds two numbers without verification. 
 
 ## Next release
+### Include a change with failing tests    `enhancement`  
+* Further information in the Pull Request [#8](https://github.com/AriHealth/spring-boot-template/pull/8)
+## 0.0.2
 ### Generate the changelog in generate-sources phase    `bug`  
 * Further information in the Pull Request [#6](https://github.com/AriHealth/spring-boot-template/pull/6)
 ## 0.0.1
