@@ -38,7 +38,7 @@ public class CalculatorService implements Service {
 
 	@Override
 	public int plus(int sum1, int sum2) {
-		return sum1 - sum2;
+		return sum1 + sum2;
 	}
 	
 	public void setRestTemplate(RestTemplate restTemplate) {
