@@ -31,17 +31,17 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class CalculatorService implements Service {
 
-	public static final Logger log = LoggerFactory.getLogger(CalculatorService.class);
+    public static final Logger log = LoggerFactory.getLogger(CalculatorService.class);
 
-	//Constants
-	RestTemplate restTemplate = new RestTemplate();
+    // Constants
+    RestTemplate restTemplate = new RestTemplate();
 
-	@Override
-	public int plus(int sum1, int sum2) {
-		return sum1 + sum2;
-	}
-	
-	public void setRestTemplate(RestTemplate restTemplate) {
-		this.restTemplate = restTemplate;
-	}
+    @Override
+    public int plus(int sum1, int sum2) {
+        return sum1 + sum2;
+    }
+
+    public void setRestTemplate(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 }
