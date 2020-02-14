@@ -1,5 +1,8 @@
 language: java
 
+jdk:
+  - openjdk8
+
 sudo: false
 
 cache:
@@ -22,8 +25,8 @@ addons:
       secure: m4/trO+ghMWD4Qx1Uee+J348xq+OjVSzHH+MN2OvGklLuu7iW1tuGJT3o1o7/g1SbzGDRbI/8Wxi8VSZ6LE24smR9Yt2C3EIRhnePkTWYgf3ZZ0Q/PWII8BvtZ1LjxfNaObCt6XI1oajYRvVmhd/mOU1zxMbUTsY8faqrb5Ru6QBhxFaFd53Mtec2ttEO3+9j5jBR1jTkk/o0fA+lAzjZjCw8esZJCSIEPaMABo2EBQeDvTFM5uDJklDB9fD3OGiLST4CwvgBYbxVBf6VcSx8KcbjrFk8jqJ9DOWVos+owUHvKq1Etr8qvSvwmQaZferWJWkGnB6W4azS4+gkmLuGBOgx8rwfyetTEaj8lxpPWstBb5bxY8xOjWXNENT79aJ28QEDN+VSwyBOrjuzXP6sh2c/PI+Gp18zNnZ9BuW6teothJUvJkD2dCiZeTozcbjX5clmTSf0uxavzxoEFWFz79j3gXpQ2cHipXegEV7hibwUNl9xHwNlFOom6YECLNTSjcIaTpzC/hFsqyYrxyL8L3ey9eC5VUUoHe7Cktv7+KM2E1V4UlAO7yY4x2pBHRkfBNlrEPvcRZftcOW2x6KcJ/saFWbQag7jartoB/xiVBJ0bMqupEctJ7NgCg1Qd7Kh54v2BvdQTOV1kVlGGLqZIdi+2eATC819rGlLnsH9ec=
       
 script:
-  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then mvn clean test -B; mvn package -Dmaven.test.skip=true; mvn sonar:sonar; fi
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then mvn clean test -B; mvn sonar:sonar; fi
+  - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then mvn clean test; mvn package -Dmaven.test.skip=true; mvn sonar:sonar; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then mvn clean test; mvn sonar:sonar; fi
   - if [ "$TRAVIS_BRANCH" = "release" ]; then chmod +x .travis/prepare.sh && .travis/prepare.sh; mvn -s .travis/settings.xml -B release:clean release:prepare; git push --tags; mvn -s .travis/settings.xml -B release:perform; chmod +x .travis/push.sh && .travis/push.sh; fi
 
 after_success:
