@@ -1,10 +1,10 @@
-This End-User License Agreement (the *EULA*) is a legal agreement between the *Licensee*, an individual, and Atos Spain S.A. Unipersonal (the *Company*), the author of **Spring Boot Template** (the *Software*), which may include associated media, printed materials, and *online* or electronic documentation.
+This End-User License Agreement (the *EULA*) is a legal agreement between the *Licensee*, an individual, and Atos Spain S.A. Unipersonal (the *Company*), the author of **#projectdescription** (the *Software*), which may include associated media, printed materials, and *online* or electronic documentation.
 
 By installing, copying, or otherwise using the *Software*, *Licensee* agrees to be bound by the terms and conditions set forth in this *EULA*. If *Licensee* does not agree to the terms and conditions set forth in this *EULA*, then *Licensee* may not download, install, or use *Software*.
 1.	**Definitions**
 - *Company* shall refer to the licensor, Atos Spain S.A. Unipersonal, located at Albarracin 25, Madrid (Spain).
 - *Licensee* shall mean the individual or entity that downloads and uses the *Software*.
-- *Software* shall mean **Spring Boot Template** (optional) the deliverables provided pursuant to this *EULA*.
+- *Software* shall mean **#projectdescription** (optional) the deliverables provided pursuant to this *EULA*.
 2.	**Grant of License**
 - **Software Product License**. Subject to the terms in *EULA*, *Company* hereby grants to *Licensee* a royalty-free, non-exclusive license to possess and to use a copy of the *Software*. *Software* is distributed under **Apache 2.0** terms. Thus, *Licensee* is not allowed to make a charge for distributing this *Software*, either for profit or merely to recover media and distribution costs.
 - **Installation and Use**. *Licensee* may install and use an unlimited number of copies of *Software* on a share computer or concurrently on different computers, and make multiple back-up copies of *Software*, solely for *Licensee*’s use within *Licensee*’s business or personal use.
