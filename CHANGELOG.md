@@ -3,6 +3,9 @@
 Spring Boot template prepared for CI/CD in GitHub and Travis which adds two numbers without verification. 
 
 ## Next release
+### Upgrade to Spring Boot version 2.3.0  
+* Further information in the Pull Request [#13](https://github.com/AriHealth/spring-boot-template/pull/13)
+## 0.0.4
 ### Refactor and reindentation    `enhancement`  
 * Further information in the Pull Request [#10](https://github.com/AriHealth/spring-boot-template/pull/10)
 ## 0.0.3
